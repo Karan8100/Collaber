@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Collaber</title>
+
+</head>
+<body>
+        
+    <div id="toolbar">
+      <div class="sec-1">
+        <label>Brush Size:</label>
+        <input type="range" id="thickness" min="1" max="10" value="5">
+        
+        <label>Brush Color:</label>
+        <input type="color" id="color">
+
+        <label>Background:</label>
+        <input type="color" id="bg-color">
+
+        <label>Eraser:</label>
+        <input type="checkbox" id="eraser">
+       </div>
+
+       <div class="sec-2">
+         <button id="clear">Clear</button>
+         <!-- <button id="undo">Undo</button>
+         <button id="redo">Redo</button>
+         <button id="save">Save as Image</button> -->
+       </div>
+    </div>
+        <canvas id="board"></canvas>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script> <!-- Link to JS file -->
+    
+</body>
+</html>
